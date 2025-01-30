@@ -1,0 +1,13 @@
+{
+    "code-element": {
+        "elements": {
+            "config": {
+                "label": {
+                    "codeElement": "Code Element",
+                    "html": "HTML einfügen",
+                    "js": "JavaScript Inhalt"
+                }
+            }
+        }
+    }
+}

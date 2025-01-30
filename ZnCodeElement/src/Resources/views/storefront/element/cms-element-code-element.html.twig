@@ -1,0 +1,12 @@
+{% block element_code_element %}
+
+    {% set data = element.translated.config.html.value|raw %}
+    {% if element.config.js.value %}
+        {% set js = element.config.js.value|raw %}
+        {% if '<script ' not in js %}
+            NOT IN
+            {% set js = '<script type="text/javascript">' ~ js ~  '</script>' %}
+        {% endif %}
+    {% endif %}
+    {{ include(template_from_string(data ~ js)) }}
+{% endblock %}

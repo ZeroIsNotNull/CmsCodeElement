@@ -1,0 +1,31 @@
+{
+    "name": "zn/code-element",
+    "description": "CMS Code Element",
+    "version": "1.0.0",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nima Sorouri"
+        }
+    ],
+    "require": {
+        "shopware/core": "6.5.*"
+    },
+    "type": "shopware-platform-plugin",
+    "autoload": {
+        "psr-4": {
+            "Zn\\CodeElement\\": "src/"
+        }
+    },
+    "extra": {
+        "shopware-plugin-class": "Zn\\CodeElement\\ZnCodeElement",
+        "label": {
+            "de-DE": "Code Element",
+            "en-GB": "Code Element"
+        },
+        "description": {
+            "de-DE": "Code Element als CMS-Element einfügen",
+            "en-GB": "Integrate Code as CSM-Element"
+        }
+    }
+}
